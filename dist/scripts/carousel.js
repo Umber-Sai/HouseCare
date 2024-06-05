@@ -26,6 +26,7 @@ $(document).ready(function() {
     let position = 0;
     let offset = 0;
 
+    
     slides.on(' touchstart', (event) => {
         const firstTouch = event.touches[0];
         posInit = firstTouch.clientX;

@@ -28,6 +28,10 @@ $('.toTech').click(() => {
 $('.toSurety').click(() => {
     $('.surety')[0].scrollIntoView({behavior : 'smooth'});
 })
+$('.toCarousel').click(() => {
+    $('#build')[0].scrollIntoView({behavior : 'smooth'});
+})
+
 
 // header
 $('.hamburger-menu').click(function() {
