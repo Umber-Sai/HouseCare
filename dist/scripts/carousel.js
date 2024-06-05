@@ -26,14 +26,15 @@ $(document).ready(function() {
     let position = 0;
     let offset = 0;
 
-    
-    slides.on(' touchstart', (event) => {
+    const frame = $('.slide');
+    frame.on(' touchstart', (event) => {
         const firstTouch = event.touches[0];
         posInit = firstTouch.clientX;
+        console.log(posInit)
         console.log('posInit: ' + posInit);
     });
 
-    $('body').on(' touchmove', (event) => {
+    frame.on(' touchmove', (event) => {
         const firstTouch = event.touches[0];
         position = firstTouch.clientX;
         if (posInit != 0) {
